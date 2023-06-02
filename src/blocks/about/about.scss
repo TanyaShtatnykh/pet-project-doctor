@@ -1,3 +1,51 @@
 .about {
-  
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+
+  &__photo {
+    margin-right: 38px;
+  }
+  &__title {
+    margin-bottom: 42px;
+    font-weight: 900;
+    font-size: px-to-em(48);
+    line-height: lh-to-pct(56, 48);
+  }
+  &__period {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: px-to-em(26);
+    line-height: lh-to-pct(30, 26);
+  }
+  &__place {
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: px-to-em(26);
+    line-height: lh-to-pct(30, 26);
+    color: #FFFFC9;
+  }
+  &__text {
+    margin-bottom: 42px;
+    font-weight: 300;
+    font-size: px-to-em(26);
+    line-height: lh-to-pct(39, 26);
+    color: #FFFFC9;
+  }
+  &__blog-link {
+    padding: 12px 36px;
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(28, 24);
+    color: #FFFF3E;
+    background: #1E1E1E;
+    text-decoration: none;
+    transition: 0.8s;
+    &:hover {
+      background: #FFFF3E;
+      color: #1E1E1E;
+    }
+  }
 }

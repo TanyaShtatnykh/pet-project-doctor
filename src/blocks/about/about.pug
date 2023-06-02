@@ -1,7 +1,35 @@
-mixin about(modifier)
+mixin about(tab, title)
   .about&attributes(attributes)
-    h2.about__title Обо мне
-    p.about__text Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. Таким образом консультация с широким активом в значительной степени обуславливает создание соответствующий условий активизации.
-    a(href="#").about__blog-link Мой блог в инстаграме
+    img.about__photo(src=`img/${tab}Photo.png`, alt="Мое фото")
+    .about__content
+      h2.about__title=title
+      if (tab==="education")
+        ul.about__list
+          li.about__item
+            h3.about__period 2006-2011
+            p.about__place Государственный институт прикладной психологии
+          li.about__item
+            h3.about__period 2012-2017
+            p.about__place Британский университет психоанализа и психосоматики
+          li.about__item
+            h3.about__period 2023
+            p.about__place Самообучение и саморазвитие (курсы, профессиональная литература)
+      else if (tab==="jobs")
+        ul.about__list
+          li.about__item
+            h3.about__period 3 года
+            p.about__place Государственный психо-неврологический диспансер
+          li.about__item
+            h3.about__period 3 года
+            p.about__place Психоаналитик в частной клинике
+          li.about__item
+            h3.about__period 2 года 
+            p.about__place Психотерапевт в частной клинике
+          li.about__item
+            h3.about__period 2 года 
+            p.about__place Частная практика
+      else 
+        p.about__text Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. Таким образом консультация с широким активом в значительной степени обуславливает создание соответствующий условий активизации.
+        a(href="#").about__blog-link Мой блог в инстаграме
           
       
