@@ -1,0 +1,16 @@
+mixin info(modifier)
+  section.info&attributes(attributes)
+    .info__area#tabs
+      ul.info__tabs
+        li.info__tab: a.info__link(href="#about") Обо мне
+        li.info__tab: a.info__link(href="#education") Образование 
+        li.info__tab: a.info__link(href="#jobs") Практика
+      .info__block#about
+        img.info__photo(src="img/aboutPhoto.png", alt="Мое фото")
+        +about
+      .info__block#education
+        img.info__photo(src="img/educationPhoto.png", alt="Мое образование")
+        +education
+      .info__block#jobs
+        img.info__photo(src="img/jobPhoto.png", alt="Моя практика")
+        +job

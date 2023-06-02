@@ -1,0 +1,38 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Literata:wght@300;500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 100px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, #6C6C6C 0%, #999999 100%);
+  color: #FFFF3E;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button, input {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/welcome/welcome';
+@import './src/blocks/advantages/advantages';
+@import './src/blocks/about/about';
+@import './src/blocks/education/education';
+@import './src/blocks/job/job';
+@import './src/blocks/tabs/tabs';
+@import './src/blocks/info/info';

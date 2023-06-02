@@ -1,0 +1,12 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__area
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item: a(href="#").header__menu-link Обо мне
+          li.header__menu-item: a(href="#").header__menu-link Услуги
+          li.header__menu-item: a(href="#").header__menu-link Контакты
+          li.header__menu-item: a(href="#").header__menu-link Отзывы
+      a(href="tel:89999999999").header__contact
+        include ./img/phone.svg
+        p.header__phone 8-999-999-99-99

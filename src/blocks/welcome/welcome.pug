@@ -1,0 +1,14 @@
+mixin welcome(modifier)
+  section.welcome&attributes(attributes)
+    .welcome__info
+      h1.welcome__name Елена Антовнова
+      p.welcome__profession частный психотерапевт
+      button(type="button").welcome__appointment Записаться на прием
+      .welcome__social
+        a(href="#").welcome__social-link
+          include ./img/vk.svg
+        a(href="#").welcome__social-link
+          include ./img/ig.svg
+        a(href="#").welcome__social-link
+          include ./img/tg.svg
+    img(src="img/welcomePhoto.png", alt="Приветственное фото")
