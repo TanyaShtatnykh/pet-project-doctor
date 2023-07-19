@@ -11,21 +11,6 @@
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  &__menu-list {
-    display: flex;
-  }
-  &__menu-link {
-    margin-right: 52px;
-    font-weight: 300;
-    font-size: px-to-em(24);
-    line-height: lh-to-pct(28, 24);
-    color: #FFFFC9;
-    text-decoration: none;
-    transition: 0.6s;
-    &:hover {
-      color: #FFFF3E;
-    }
-  }
   &__contact {
     display: flex;
     align-items: center;
@@ -47,5 +32,8 @@
     font-weight: 900;
     font-size: px-to-em(26);
     line-height: lh-to-pct(30, 26);
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 0 50px;
   }
 }

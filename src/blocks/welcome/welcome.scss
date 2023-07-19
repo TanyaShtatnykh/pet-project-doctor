@@ -5,7 +5,14 @@
     max-width: 1080px;
     margin: 0 auto;
     padding: 58px 0 200px;
-
+    
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 22px;
+  }
   &__name {
     margin-bottom: 20px;
     font-family: 'Literata', serif;
@@ -38,7 +45,8 @@
     }
   }
   &__social {
-    margin-left: 60px;
+    display: flex;
+    margin-left: 42px;
   }
   &__social-link {
     margin-right: 32px;
@@ -52,6 +60,37 @@
       path {
         fill: #FFFF3E;
       }   
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 58px 50px 200px;
+
+    &__info {
+      max-width: 284px;
+    }
+    &__name {
+      margin-bottom: 18px;
+      font-size: px-to-em(45);
+      line-height: lh-to-pct(67, 45);
+    }
+    &__profession {
+      margin-bottom: 32px;
+      font-size: px-to-em(18);
+      line-height: lh-to-pct(27, 18);
+    }
+    &__appointment {
+      padding: 12px 30px;
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(23, 20);
+    }
+    &__social-link {
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+    &__photo {
+      max-width: 530px;
     }
   }
 }

@@ -1,0 +1,21 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+
+  &__title {
+    align-self: center;
+    margin-bottom: 42px;
+    font-size: px-to-em(45);
+    font-weight: 900;
+    line-height: lh-to-pct(53, 45);
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

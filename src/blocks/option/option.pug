@@ -1,0 +1,8 @@
+mixin option(title, cost, text)
+  .option&attributes(attributes)
+    h3.option__title=title
+    p.option__cost=cost 
+    .option__info
+      h4.option__name Описание
+      p.option__text=text
+    button.option__btn(type="button") записаться

@@ -1,0 +1,38 @@
+.popup {
+  display: none;
+  &--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+  }
+  &__content {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background: url(../img/bg.png) #000 no-repeat center center;
+    object-fit: cover;
+  }
+  &__close {
+    align-self: flex-end;
+    height: 38px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    path {
+      transition: 0.8s;
+    }
+    &:hover {
+      path {
+        stroke: #FFFF3E;
+      }
+    }
+  }
+}

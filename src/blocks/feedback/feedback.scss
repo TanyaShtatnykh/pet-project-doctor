@@ -1,0 +1,27 @@
+.feedback {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 52px;
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+  &__info {
+    margin: 0 22px;
+    max-width: 694px;
+    padding: 22px;
+    border: 2px solid #FFFF3E;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(21, 18);
+    color: #FFFFC9;
+  }
+  &__name {
+    margin-bottom: 22px;
+    font-weight: 900;
+  }
+  &__text {
+    font-weight: 400;
+  }
+}

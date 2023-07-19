@@ -1,0 +1,6 @@
+mixin feedback(photo, name, text)
+  .feedback&attributes(attributes)
+    img.feedback__photo(src=photo, alt="Фото клиента")
+    .feedback__info
+      h3.feedback__name=name
+      p.feedback__text=text

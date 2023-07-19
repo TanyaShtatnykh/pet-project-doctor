@@ -20,6 +20,10 @@
     color: #FFFFC9;
     opacity: 0.5;
     text-decoration: none;
+    transition: 0.8s;
+    &:hover {
+      border-bottom: 1px solid #FFFFC9;
+    }
   }
   .ui-tabs-active a {
     opacity: 1;

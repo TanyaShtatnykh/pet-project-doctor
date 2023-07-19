@@ -1,0 +1,27 @@
+.reviews {
+  &__area {
+    padding-bottom: 200px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  li:nth-child(n+2) {
+    margin-left: 22px;
+  }
+  button {
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFF3E;
+    color: transparent;
+    opacity: 0.5;
+  }
+}
+.slick-active button {
+  opacity: 1;
+}

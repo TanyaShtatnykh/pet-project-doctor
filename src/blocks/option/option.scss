@@ -1,0 +1,27 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: px-to-em(24);
+    font-weight: 700;
+    color: #FFFFC9;
+  }
+  &__cost {
+    margin-bottom: 22px;
+    font-size: px-to-em(24);
+    font-weight: 500;
+    color: #FFFFC9;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    background: url("/./img/family.png") no-repeat center center;
+    background-size: contain;
+  }
+}
