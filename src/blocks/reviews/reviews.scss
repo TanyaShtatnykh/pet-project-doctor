@@ -1,9 +1,39 @@
 .reviews {
-  &__area {
-    padding-bottom: 200px;
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+
+  &__title {
+    align-self: center;
+    margin-bottom: 52px;
+    font-size: px-to-em(45);
+    line-height: lh-to-pct(53, 45);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 0 50px 200px;
+  }
+  @media screen and (max-width: 991.98px) {
+    padding: 0 50px 100px;
+  }
+  @media screen and (max-width: 575.98px) {
+    &__title {
+      margin-bottom: 32px;
+      font-size: px-to-em(16);
+    }
+    .slick-dots {
+      li:nth-child(n+2) {
+        margin-left: 12px;
+      }
+      button {
+        width: 24px;
+        height: 14px;
+      }
+    }
   }
 }
 .slick-dots {

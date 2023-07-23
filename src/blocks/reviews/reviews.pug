@@ -1,6 +1,7 @@
 mixin reviews(modifier)
-  .reviews&attributes(attributes)
-    .reviews__area
+  .reviews&attributes(attributes)#reviews
+    h2.reviews__title Отзывы
+    .reviews__slides
       .reviews__slide
         +feedback("img/oksana.png", "Оксана Камнева", "Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции играет важную роль в формировании систем массового участия.")
         +feedback("img/irina.png", "Ирина Мельникова", "Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции играет важную роль в формировании систем массового участия.")

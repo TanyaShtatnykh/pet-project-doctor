@@ -1,27 +1,128 @@
 .option {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-
-  &__title {
-    margin-bottom: 12px;
-    font-size: px-to-em(24);
-    font-weight: 700;
-    color: #FFFFC9;
-  }
-  &__cost {
-    margin-bottom: 22px;
-    font-size: px-to-em(24);
-    font-weight: 500;
-    color: #FFFFC9;
+  &__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
   }
   &__info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 40px;
-    background: url("/./img/family.png") no-repeat center center;
-    background-size: contain;
+    align-items: flex-start;
+    margin-left: 32px;
+    color: #FFFFC9;
+  }
+  &__title {
+    margin-bottom: 22px;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(47, 40);
+    font-weight: 700;
+  }
+  &__cost {
+    margin-bottom: 38px;
+    font-size: px-to-em(30);
+    line-height: lh-to-pct(35, 30);
+    font-weight: 500;
+  }
+  &__name {
+    margin-bottom: 16px;
+    font-size: px-to-em(26);
+    font-weight: 700;
+    color: #FFFF3E;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 62px;
+    font-size: px-to-em(21);
+    line-height: lh-to-pct(25, 21);
+    font-weight: 400;
+    color: #FFFFC9;
+  }
+  &__btn {
+    padding: 16px 62px;
+    border: none;
+    border-radius: 5px;
+    font-size: px-to-em(30);
+    line-height: lh-to-pct(35, 30);
+    font-weight: 700;
+    background-color: #FFFF3E;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 991.98px) {
+    &__photo {
+      max-width: 300px;
+    }
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(30);
+      line-height: lh-to-pct(35, 30);
+    }
+    &__cost {
+      margin-bottom: 22px;
+      font-size: px-to-em(24);
+      line-height: lh-to-pct(28, 24);
+    }
+    &__name {
+      font-size: px-to-em(22);
+    }
+    &__text {
+      margin-bottom: 42px;
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(19, 16);
+    }
+    &__btn {
+      padding: 16px 42px;
+      font-size: px-to-em(24);
+      line-height: lh-to-pct(28, 24);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__info {
+      margin-left: 20px;
+    }
+    &__photo {
+      max-width: 240px;
+    }
+    &__title {
+      margin-bottom: 13px;
+      font-size: px-to-em(26);
+    }
+    &__cost {
+      margin-bottom: 20px;
+      font-size: px-to-em(20);
+    }
+    &__name {
+      font-size: px-to-em(18);
+    }
+    &__text {
+      font-size: px-to-em(12);
+    }
+    &__btn {
+      padding: 12px 32px;
+      font-size: px-to-em(20);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__area {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    &__photo {
+      max-width: 220px;
+      margin-bottom: 10px;
+    }
+    &__info {
+      margin-left: 0;
+    }
+    &__text {
+      margin-bottom: 22px;
+    }
+    &__btn {
+      align-self: center;
+      font-size: px-to-em(12);
+    }
   }
 }

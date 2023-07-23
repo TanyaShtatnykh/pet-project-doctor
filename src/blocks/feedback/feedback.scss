@@ -1,5 +1,6 @@
 .feedback {
   display: flex;
+  align-items: flex-start;
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
@@ -23,5 +24,35 @@
   }
   &__text {
     font-weight: 400;
+  }
+  @media screen and (max-width: 991.98px) {
+    &__photo {
+      max-width: 88px;
+      object-fit: contain;
+    }
+    &__info {
+      padding: 12px;
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(16, 14);
+    }
+    &__name {
+      margin-bottom: 12px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding-bottom: 32px;
+    &:nth-of-type(even) {
+      flex-direction: row;
+      text-align: start;
+    }
+    &__photo {
+      max-width: 44px;
+    }
+    &__info {
+      margin: 0 0 0 6px;
+      padding: 10px;
+      border: 1px solid #FFFF3E;
+      font-size: px-to-em(10);
+    }
   }
 }

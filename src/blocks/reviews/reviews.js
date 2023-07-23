@@ -1,5 +1,5 @@
 $(function () {
-  $('.reviews__area').slick({
+  $('.reviews__slides').slick({
     dots: true,
     arrows: false,
     adaptiveHeight: true

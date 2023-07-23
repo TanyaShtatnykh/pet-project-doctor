@@ -1,8 +1,11 @@
-mixin option(title, cost, text)
+mixin option(photo, title, cost, text)
   .option&attributes(attributes)
-    h3.option__title=title
-    p.option__cost=cost 
-    .option__info
-      h4.option__name Описание
-      p.option__text=text
-    button.option__btn(type="button") записаться
+    .option__area
+      img.option__photo(src=`img/${photo}.png`, alt="")
+      .option__info
+        h3.option__title=title
+        p.option__cost=cost 
+        .option__description
+          h4.option__name Описание
+          p.option__text=text
+        button.option__btn(type="button") Записаться

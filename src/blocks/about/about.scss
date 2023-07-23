@@ -48,4 +48,51 @@
       color: #1E1E1E;
     }
   }
+  @media screen and (max-width: 1199.98px) {
+    &__title {
+      margin-bottom: 26px;
+    }
+    &__photo {
+      max-width: 336px;
+      margin-right: 28px;
+    }
+    &__text {
+      margin-bottom: 30px;
+      font-size: px-to-em(22);
+    }
+    &__blog-link {
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(23, 20);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title, &__photo {
+      display: none;
+    }
+    &__blog-link {
+      align-self: center;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__period {
+      margin-bottom: 10px;
+      font-size: px-to-em(16);
+    }
+    &__place {
+      margin-bottom: 32px;
+      font-size: px-to-em(14);
+    }
+    &__text {
+      margin-bottom: 10px;
+      font-size: px-to-em(12);
+    }
+    &__blog-link {
+      padding: 4px 26px;
+      font-size: px-to-em(10);
+    }
+  }
 }

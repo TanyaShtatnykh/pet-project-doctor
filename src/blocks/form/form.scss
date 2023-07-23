@@ -58,4 +58,34 @@
       color: #FFFF3E;
     }
   }
+  @media screen and (max-width: 991.98px) {
+    &__area {
+      padding: 0 80px;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: px-to-em(36);
+      text-align: center;
+    }
+    &__submit {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__area {
+      padding: 0 50px;
+    }
+    &__title {
+      font-size: px-to-em(16);
+    }
+    &__field {
+      padding: 10px 0;
+      font-size: px-to-em(10);
+    }
+    &__submit {
+      margin-top: 10px;
+      padding: 6px 20px;
+      font-size: px-to-em(12);
+    }
+  }
 }

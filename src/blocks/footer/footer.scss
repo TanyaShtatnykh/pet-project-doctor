@@ -26,9 +26,48 @@
   &__contacts {
     margin-top: 20px;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: px-to-em(25);
+    line-height: lh-to-pct(29,25);
     color: #FFFFC9;
     text-decoration: none;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item:not(:last-of-type) {
+    margin-right: 32px;
+  }
+  &__menu-link {
+    font-weight: 300;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(28, 24);
+    color: #FFFFC9;
+    text-decoration: none;
+    transition: 0.6s;
+    &:hover {
+      color: #FFFF3E;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 100px 50px 32px;
+
+    &__info {
+      margin-bottom: 24px;
+    }
+    &__title {
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      font-size: px-to-em(16);
+    }
+    &__contacts {
+      margin-top: 12px;
+      font-size: px-to-em(14);
+    }
+    &__menu-item:not(:last-of-type) {
+      margin-right: 22px;
+    }
+    &__menu-link {
+      font-size: px-to-em(10);
+    }
   }
 }

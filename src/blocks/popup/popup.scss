@@ -35,4 +35,9 @@
       }
     }
   }
+  @media screen and (max-width: 991.98px) {
+    &__content {
+      width: 660px;
+    }
+  }
 }

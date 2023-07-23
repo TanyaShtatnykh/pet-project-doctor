@@ -9,7 +9,6 @@
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding-left: 22px;
   }
@@ -49,7 +48,9 @@
     margin-left: 42px;
   }
   &__social-link {
-    margin-right: 32px;
+    &:nth-of-type(n+2) {
+      margin-left: 32px;
+    } 
     circle, path {
       transition: 0.6s;
     }
@@ -91,6 +92,63 @@
     }
     &__photo {
       max-width: 530px;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    justify-content: center;
+    padding: 58px 50px;
+
+    &__info {
+      align-items: center;
+      max-width: 100%;
+      padding-left: 0;
+    }
+    &__name {
+      margin-bottom: 10px;
+    }
+    &__profession {
+      order: -1;
+      margin-bottom: 0;
+    }
+    &__appointment {
+      order: 10;
+    }
+    &__social {
+      margin: 0 0 32px;
+    }
+    &__photo {
+      margin-bottom: 32px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__photo {
+      max-width: 440px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 32px 58px 50px;
+
+    &__profession {
+      font-size: px-to-em(12);
+    }
+    &__name {
+      font-size: px-to-em(22);
+    }
+    &__social-link {
+      &:nth-of-type(n+2) {
+        margin-left: 22px;
+      }
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &__photo {
+      max-width: 220px;
+    }
+    &__appointment {
+      padding: 12px 18px;
+      font-size: px-to-em(14);
     }
   }
 }

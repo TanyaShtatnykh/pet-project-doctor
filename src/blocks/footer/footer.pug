@@ -4,4 +4,7 @@ mixin footer(modifier)
       h2.footer__title Елена Антовнова
       p.footer__contacts Адрес: ул Пролетарская 87
       a.footer__contacts(href="tel:+79999999999") Телефон: 8-999-999-99-99
-    +navigation
+    ul.footer__menu-list
+      li.footer__menu-item: a(href="#info").footer__menu-link Обо мне
+      li.footer__menu-item: a(href="#price").footer__menu-link Услуги
+      li.footer__menu-item: a(href="#reviews").footer__menu-link Отзывы

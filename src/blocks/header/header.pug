@@ -1,8 +1,13 @@
 mixin header(modifier)
   header.header&attributes(attributes)
     .header__area
+      button.header__burger-btn(type="button")
+        include ./img/burger.svg
       nav.header__menu
-        +navigation
+        ul.header__menu-list
+          li.header__menu-item: a(href="#info").header__menu-link Обо мне
+          li.header__menu-item: a(href="#price").header__menu-link Услуги
+          li.header__menu-item: a(href="#reviews").header__menu-link Отзывы
       a(href="tel:89999999999").header__contact
         include ./img/phone.svg
         p.header__phone 8-999-999-99-99
