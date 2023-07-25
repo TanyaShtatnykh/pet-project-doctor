@@ -1,6 +1,9 @@
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Literata:wght@300;500&family=Roboto:wght@300;400;500;700;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 100px 0 0 0;
